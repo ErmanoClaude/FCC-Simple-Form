@@ -2,6 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <title>FCC Form</title>
     <link rel="stylesheet" href="styles.css">
   </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our platform</p>
+    
+    <form method="POST" action="#_blank">
+      <fieldset>
+        <label for="name">Name<input id="name" name="full-name" type="text" placeholder="Enter your name" required/></label>
+        <label for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required/></label>
+        <label for="age">Age (Optional)<input id="age" name="age" type="number" min="17" max="80" placeholder="Age"/></label>
+        <label for="description">Which option best describe your current role?</label>
+      </fieldset>
+
+    </form>
+  </body>
 </html>
