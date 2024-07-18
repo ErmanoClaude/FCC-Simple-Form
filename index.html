@@ -9,14 +9,38 @@
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve our platform</p>
     
-    <form method="POST" action="#_blank">
+    <form id="survey-form" method="POST" action="#_blank">
       <fieldset>
-        <label for="name">Name<input id="name" name="full-name" type="text" placeholder="Enter your name" required/></label>
-        <label for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required/></label>
-        <label for="age">Age (Optional)<input id="age" name="age" type="number" min="17" max="80" placeholder="Age"/></label>
-        <label for="description">Which option best describe your current role?</label>
+        <label id="name-label" for="name">Name<input id="name" name="full-name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label" for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required/></label>
+        <label id="number-label" for="age">Age (Optional)<input id="age" name="age" type="number" min="17" max="80" placeholder="Age"/></label>
+        
+        <label for="dropdown">Which option best describe your current role?</label>
+        <select id="dropdown">
+          <option selected disabled>Select current role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>First Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
       </fieldset>
-
+        
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label for="definitely-recommend"><input id="definitely-rocommend" type="radio" />Definitely</label>
+        <label for="maybe-recommend"><input id="maybe-recommend" type="radio" />Maybe</label>
+        <label for="not-sure-recommend"><input id="not-sure-recommend" type="radio" />Not Sure</label>
+      </fieldset>
+      <fieldset>
+        
+      </fieldset>
+      <fieldset>
+        
+      </fieldset>
+      <fieldset>
+        
+      </fieldset>
     </form>
   </body>
 </html>
