@@ -8,10 +8,8 @@ body {
   text-align:center;
 }
 
-label {
+label, input {
   display: block;
 }
 
-input {
-  display: block;
-}
+
