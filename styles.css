@@ -4,12 +4,25 @@ body {
   font-family: Monospace, sans-serif;
 }
 
-#title, #description {
+#title, #description{
   text-align:center;
 }
 
-label, input {
-  display: block;
+
+fieldset {
+  border: none;
 }
 
 
+.input-block input, .input-block label {
+  display:block;
+}
+
+.check-radio label {
+  display:block;
+}
+
+form {
+  border: 1px black solid;
+  margin:0 10% 0 10%;
+}

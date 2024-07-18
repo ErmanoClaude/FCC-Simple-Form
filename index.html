@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>FCC Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve our platform</p>
-    
+    <p id="description">
+      Thank you for taking the time to help us improve our platform
+    </p>
+
     <form id="survey-form" method="POST" action="#_blank">
-      <fieldset>
-        <label id="name-label" for="name">Name<input id="name" name="full-name" type="text" placeholder="Enter your name" required/></label>
-        <label id="email-label" for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required/></label>
-        <label id="number-label" for="age">Age (Optional)<input id="age" name="age" type="number" min="17" max="80" placeholder="Age"/></label>
-        
-        <label for="dropdown">Which option best describe your current role?</label>
+      <fieldset class="input-block">
+        <label id="name-label" for="name"
+          >Name<input
+            id="name"
+            name="full-name"
+            type="text"
+            placeholder="Enter your name"
+            required
+        /></label>
+        <label id="email-label" for="email"
+          >Email<input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your Email"
+            required
+        /></label>
+        <label id="number-label" for="age"
+          >Age (Optional)<input
+            id="age"
+            name="age"
+            type="number"
+            min="17"
+            max="80"
+            placeholder="Age"
+        /></label>
+
+        <label for="dropdown"
+          >Which option best describe your current role?</label
+        >
         <select id="dropdown">
           <option selected disabled>Select current role</option>
           <option>Student</option>
@@ -25,21 +51,84 @@
           <option>Other</option>
         </select>
       </fieldset>
-        
-      <fieldset>
+
+      <fieldset class="check-radio">
         <legend>Would you recommend freeCodeCamp to a friend?</legend>
-        <label for="definitely-recommend"><input id="definitely-rocommend" type="radio" />Definitely</label>
-        <label for="maybe-recommend"><input id="maybe-recommend" type="radio" />Maybe</label>
-        <label for="not-sure-recommend"><input id="not-sure-recommend" type="radio" />Not Sure</label>
+        <label for="definitely-recommend"
+          ><input
+            id="definitely-rocommend"
+            name="recommendation"
+            type="radio"
+          />Definitely</label
+        >
+        <label for="maybe-recommend"
+          ><input
+            id="maybe-recommend"
+            name="recommendation"
+            type="radio"
+          />Maybe</label
+        >
+        <label for="not-sure-recommend"
+          ><input
+            id="not-sure-recommend"
+            name="recommendation"
+            type="radio"
+          />Not Sure</label
+        >
+      </fieldset>
+      <fieldset class="input-block">
+        <label for="favorite-feat"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select id="facorite-feat">
+          <option selected disabled>Select an option</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+      </fieldset>
+      <fieldset class="check-radio">
+        <legend>
+          What would you liked to see improved? (check all that apply)
+        </legend>
+        <label for="front-end"
+          ><input id="front-end" type="checkbox" />Front-end Project</label
+        >
+        <label for="back-end"
+          ><input id="back-end" type="checkbox" />Back-end Project</label
+        >
+        <label for="Data vis"
+          ><input id="data vis" type="checkbox" />Data Visualization</label
+        >
+        <label for="challenge"
+          ><input id="challenge" type="checkbox" />Challenge</label
+        >
+        <label for="open-source"
+          ><input id="open-source" type="checkbox" />Open Source
+          Community</label
+        >
+        <label for="gitter"
+          ><input id="gitter" type="checkbox" />Gitter Help Rooms</label
+        >
+        <label for="videos"><input id="videos" type="checkbox" />Videos</label>
+        <label for="meets"
+          ><input id="meets" type="checkbox" />City Meetups</label
+        >
+        <label for="wiki"><input id="wiki" type="checkbox" />Wiki</label>
+        <label for="forum"><input id="forum" type="checkbox" />Forum</label>
+        <label for="courses"
+          ><input id="courses" type="checkbox" />Additional Courses</label
+        >
+      </fieldset>
+      <fieldset class="input-block">
+        <label for="comments">Any comments or suggestions? </label>
+        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
       </fieldset>
       <fieldset>
-        
-      </fieldset>
-      <fieldset>
-        
-      </fieldset>
-      <fieldset>
-        
+        <button type="submit">
+          Submit
+        </button>
       </fieldset>
     </form>
   </body>
