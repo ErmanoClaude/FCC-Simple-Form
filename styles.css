@@ -2,27 +2,56 @@ body {
   width: 100%;
   margin: 0;
   font-family: Monospace, sans-serif;
+  font-size: 20px;
 }
 
-#title, #description{
-  text-align:center;
+form {
+  border: 1px black solid;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  border-radius: 5px;
+  padding: 30px;
+  background-color: rgba(27, 27, 50, 0.8);
 }
 
+#title,
+#description {
+  text-align: center;
+}
 
 fieldset {
   border: none;
 }
 
-
-.input-block input, .input-block label {
-  display:block;
+input, textarea, select, option {
+  font-family: Monospace, san-serif;
+  font-size: 1.1rem;
 }
+
+textarea, select {
+  resize: vertical;
+  min-height:1.5rem;
+  width:100%;
+}
+
+.input-block input,
+.input-block label {
+  display: block;
+}
+
+
+.input-block input {
+  height: 1.5rem;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top:10px;
+  border-radius:5px;
+  border:none;
+  padding:10px;
+}
+
+
 
 .check-radio label {
-  display:block;
-}
-
-form {
-  border: 1px black solid;
-  margin:0 10% 0 10%;
+  display: block;
 }
