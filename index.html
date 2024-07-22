@@ -29,16 +29,17 @@
             placeholder="Enter your Email"
             required
         /></label>
-        <label id="number-label" for="age"
+        <label id="number-label" for="number"
           >Age (Optional)<input
-            id="age"
+            id="number"
             name="age"
             type="number"
             min="17"
             max="80"
             placeholder="Age"
         /></label>
-
+      </fieldset>
+      <fieldset class="text-width input-block">
         <label for="dropdown"
           >Which option best describe your current role?</label
         >
@@ -59,6 +60,7 @@
             id="definitely-rocommend"
             name="recommendation"
             type="radio"
+            value="definitely"
           />Definitely</label
         >
         <label for="maybe-recommend"
@@ -66,6 +68,7 @@
             id="maybe-recommend"
             name="recommendation"
             type="radio"
+            value="maybe"
           />Maybe</label
         >
         <label for="not-sure-recommend"
@@ -73,14 +76,15 @@
             id="not-sure-recommend"
             name="recommendation"
             type="radio"
+            value="notsure"
           />Not Sure</label
         >
       </fieldset>
-      <fieldset class="input-block">
+      <fieldset class="text-width input-block">
         <label for="favorite-feat"
           >What is your favorite feature of freeCodeCamp?</label
         >
-        <select id="facorite-feat">
+        <select id="favorite-feat">
           <option selected disabled>Select an option</option>
           <option>Challenges</option>
           <option>Projects</option>
@@ -93,42 +97,40 @@
           What would you liked to see improved? (check all that apply)
         </legend>
         <label for="front-end"
-          ><input id="front-end" type="checkbox" />Front-end Project</label
+          ><input id="front-end" type="checkbox" value="frontend"/>Front-end Project</label
         >
         <label for="back-end"
-          ><input id="back-end" type="checkbox" />Back-end Project</label
+          ><input id="back-end" type="checkbox" value="backend"/>Back-end Project</label
         >
         <label for="Data vis"
-          ><input id="data vis" type="checkbox" />Data Visualization</label
+          ><input id="data vis" type="checkbox" value="datavis"/>Data Visualization</label
         >
         <label for="challenge"
-          ><input id="challenge" type="checkbox" />Challenge</label
+          ><input id="challenge" type="checkbox" value="challenge"/>Challenge</label
         >
         <label for="open-source"
-          ><input id="open-source" type="checkbox" />Open Source
+          ><input id="open-source" type="checkbox" value="opensource"/>Open Source
           Community</label
         >
         <label for="gitter"
-          ><input id="gitter" type="checkbox" />Gitter Help Rooms</label
+          ><input id="gitter" type="checkbox" value="gitter"/>Gitter Help Rooms</label
         >
-        <label for="videos"><input id="videos" type="checkbox" />Videos</label>
+        <label for="videos"><input id="videos" type="checkbox" value="videos"/>Videos</label>
         <label for="meets"
-          ><input id="meets" type="checkbox" />City Meetups</label
+          ><input id="meets" type="checkbox" value="meetups"/>City Meetups</label
         >
-        <label for="wiki"><input id="wiki" type="checkbox" />Wiki</label>
-        <label for="forum"><input id="forum" type="checkbox" />Forum</label>
+        <label for="wiki"><input id="wiki" type="checkbox" value="wiki"/>Wiki</label>
+        <label for="forum"><input id="forum" type="checkbox" value="forum"/>Forum</label>
         <label for="courses"
-          ><input id="courses" type="checkbox" />Additional Courses</label
+          ><input id="courses" type="checkbox" value="additional"/>Additional Courses</label
         >
       </fieldset>
-      <fieldset class="input-block">
+      <fieldset class="text-width input-block">
         <label for="comments">Any comments or suggestions? </label>
         <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
       </fieldset>
-      <fieldset>
-        <button type="submit">
-          Submit
-        </button>
+      <fieldset class="text-width">
+        <button id="submit" type="submit">Submit</button>
       </fieldset>
     </form>
   </body>
